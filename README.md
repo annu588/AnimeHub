@@ -8,6 +8,12 @@ Android app to browse top anime and view details with trailers. Built with **Kot
 |-----------------------|--------------------------------------|
 | <img src="screenshots/list.png" width="280" alt="AnimeHub list screen" /> | <img src="screenshots/detail.png" width="280" alt="AnimeHub detail screen" /> |
 
+## Demo Video
+
+[Watch demo](demo/demo-video.mp4)
+
+<video src="demo/demo-video.mp4" controls width="400"></video>
+
 ## Highlights
 
 - **Offline-first** — Cached data when offline; auto-sync when back online; “You’re offline” on refresh
@@ -51,6 +57,12 @@ app/
 - `GET /v4/top/anime` — top anime list
 - `GET /v4/anime/{id}` — anime detail (incl. trailer)
 - `GET /v4/anime/{id}/characters` — main cast
+
+## 📦 APK Download
+
+You can download and test the app here:
+
+[Download APK](apk/app-debug.apk)
 
 ## Build & Run
 
