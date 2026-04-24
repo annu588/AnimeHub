@@ -6,6 +6,7 @@ import com.anu.animehub.data.local.AppDatabase
 import com.anu.animehub.data.remote.JikanApiService
 import com.anu.animehub.data.repository.AnimeRepositoryImpl
 import com.anu.animehub.data.util.DefaultNetworkMonitor
+import com.anu.animehub.data.util.NetworkMonitor
 import com.anu.animehub.domain.repository.AnimeRepository
 import com.anu.animehub.domain.usecase.GetAnimeDetailUseCase
 import com.anu.animehub.domain.usecase.GetTopAnimeUseCase
@@ -58,7 +59,7 @@ val appModule = module {
     }
 
     single { AppDatabase.getDatabase(androidContext()).animeDao() }
-    single { DefaultNetworkMonitor(androidContext()) }
+    single<NetworkMonitor> { DefaultNetworkMonitor(androidContext()) }
 
     single<AnimeRepository> {
         AnimeRepositoryImpl(get(), get(), get(), get())

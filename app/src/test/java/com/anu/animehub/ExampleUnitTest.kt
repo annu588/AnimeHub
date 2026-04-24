@@ -1,4 +1,4 @@
-package com.embedsdk.animehub
+package com.anu.animehub
 
 import org.junit.Test
 

@@ -10,7 +10,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.anu.animehub"
+        applicationId = "com.embedsdk.animehub"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
